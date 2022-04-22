@@ -2,14 +2,13 @@ package modulos.produto;
 
 import dateFactory.ProdutoDateFactory;
 import dateFactory.UsuarioDateFactory;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pojo.ComponentePojo;
 import pojo.Produtopojo;
-import pojo.UsuarioPojo;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +25,7 @@ public class ProdutoTest {
     public void beforeEach(){
         // Configurando os dados da API Rest da Lojinha
         baseURI = "http://165.227.93.41";
-        //port = 8080
-        basePath = "/lojinha-bugada";
+        basePath = "/lojinha";
 
 
 
